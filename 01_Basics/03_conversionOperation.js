@@ -26,5 +26,33 @@ let booleanIsNotLoggedIn = Boolean(isNotLoggedIn);
 
 let someNumber = 33;
 let stringNumber = String(someNumber);
-console.log(stringNumber);
-console.log(typeof(stringNumber));
+// console.log(stringNumber);
+// console.log(typeof(stringNumber));
+
+/***************  Operations **********/
+let value = 3;
+let negValue = -value;
+// console.log(negValue);
+
+//  console.log(2%3);
+
+let str1 = "Gagan";
+let str2 = " Sunar";
+// console.log(str1 + str2);
+
+// console.log("1" + 2);
+// console.log(1 + "2");
+// console.log("1" + 1 + 1);
+// console.log(2 + 1 + "3");
+
+// console.log(+true);
+
+let x = 3;
+const y = x++;
+
+console.log(`x:${x}, y:${y}`);
+
+let a = 3;
+const b = ++a;
+console.log(`a:${a}, b:${b}`);
+
