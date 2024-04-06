@@ -36,9 +36,9 @@ let obj = {
 const myFunction = function(){
     console.log("Hello world");
 }
-myFunction();
+// myFunction();
 
-console.log(typeof userEmail );
+// console.log(typeof userEmail );
 //returns
 //Number = Number
 //String = String
@@ -51,3 +51,26 @@ console.log(typeof userEmail );
 //Array = object
 //Object = object 
 //function = function object
+
+
+/////////////////////////////////////
+
+//Memory type -
+//Stack (Primitive), Heap (Non - Primitive)
+
+let myName = "GaganSunar";
+let anothername = myName;
+anothername = "Billie Armstrong"
+
+console.log(myName);
+console.log(anothername);
+
+let userOne = {
+    email : "gagan@gmail.com"
+}
+
+let userTwo = userOne;
+userTwo.email = "something@gmail.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
