@@ -41,10 +41,10 @@ buttons.forEach((button) => {
     }
   });
 });
-````
+```
 ## project 2 - BMI checking
 
-````javascript
+```javascript
 const form = document.querySelector('form');
 
 form.addEventListener('submit', function (e) {
@@ -72,4 +72,15 @@ form.addEventListener('submit', function (e) {
     }
   }
 });
-````
+```
+
+## project 3 - Digital Clock
+
+```javascript
+const clock = document.getElementById('clock');
+
+setInterval(function () {
+  let date = new Date();
+  clock.innerHTML = date.toLocaleTimeString();
+}, 1000);
+```
