@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color:aliceblue">
+    <h1>Async JavaScript 2 </h1>
+    <button id="start">start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    let interValid;
+    const sayDate = function(str){
+        console.log(str, Date.now());
+    }
+
+    document.querySelector('#start').addEventListener('click', () => {
+        interValid = setInterval(sayDate, 1000, "Gagan")
+    })
+
+    
+    document.querySelector('#stop').addEventListener('click', () => {
+        clearInterval(interValid);
+    
+    })
+    
+
+    </script>
+</html>
